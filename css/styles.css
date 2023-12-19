@@ -1,0 +1,197 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* 
+  color: ;
+  background-color: ;
+
+  font-family: ;
+  font-size: ;
+  font-style: ;
+  font-weight: ;
+  line-height: ;
+  letter-spacing: ;
+
+  list-style-type: ;
+
+  text-decoration: ;
+  text-shadow: ;
+  text-indent: ;
+  text-align: ;
+  text-transform: ; 
+  */
+
+body {
+  color: rgba(17, 17, 17, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  /* color: rgba(17, 17, 17, 1); */
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* header */
+.header-logo {
+  color: rgba(17, 17, 17, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+
+.menu-item-link {
+  color: rgba(17, 17, 17, 1);
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+/* section-1 */
+.start-page {
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.6);
+}
+
+.start-page-title {
+  /* width: 484px;
+  height: 102px; */
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.start-page-button,
+.start-page-link {
+  /* typography */
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  /* style */
+  border-radius: 100px;
+  padding: 14px 40px;
+}
+
+.start-page-button {
+  background-color: rgba(253, 146, 34, 1);
+  border: none;
+}
+
+.start-page-button:hover,
+.start-page-button:active {
+  background-color: rgba(252, 241, 224, 1);
+  color: rgba(253, 146, 34, 1);
+}
+
+.start-page-link {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.start-page-link:hover,
+.start-page-link:active {
+  border: 1px solid rgba(253, 146, 34, 1);
+  color: rgba(253, 146, 34, 1);
+}
+
+.start-page-scroll {
+  /* typography */
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.benefits {
+  background-color: rgba(30, 24, 35, 1);
+}
+
+.benefits-subtitle {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ingredients-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  /* width: 412px; */
+}
+
+.ingredients-title-color {
+  color: rgba(253, 146, 34, 1);
+}
+
+.ingredients-title-text {
+  text-align: center;
+
+  /* width: 486px; */
+}
+
+.ingredients-list > li {
+  border-radius: 15px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.ingredients-item-orange {
+  background-color: rgba(253, 146, 34, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.ingredients-item-violet {
+  background-color: rgba(30, 24, 35, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.ingredients-item-white {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(17, 17, 17, 1);
+
+  border: 1px solid rgba(253, 146, 34, 1);
+}
