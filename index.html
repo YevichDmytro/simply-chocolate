@@ -72,20 +72,14 @@
             </h1>
             <!-- main button -->
             <button class="start-page-button" type="button">Buy now</button>
-            <!-- main menu -->
-            <ul class="start-page-list">
-                <li class="start-page-item">
-                    <a class="start-page-link" href="#how-its-made">How it`s made</a>
-                </li>
-                <li class="start-page-item">
-                    <a class="start-page-scroll" href="#footer">scroll down</a>
-                </li>
-            </ul>
+            <!-- main links -->
+            <a class="start-page-link" href="#how-its-made">How it`s made</a>
+            <a class="start-page-scroll" href="#footer">scroll down</a>
         </section>
 
         <!-- section-2 - benefits -->
         <section class="benefits-section">
-            <h2 class="benefits-title" hidden>Benefits</h2>
+            <h2 class="visually-hidden">Benefits</h2>
             <ul class="benefits-list">
                 <li class="benefits-list-item">
                     <h3 class="benefits-item-subtitle">Unsurpassed taste</h3>
@@ -123,7 +117,7 @@
         <section class="ingredients-section">
             <h2 class="ingredients-title">
                 It all adds up to one exceptional
-                <span class="ingredients-title-color">taste</span>
+                <span class="title-color">taste</span>
                 sensation
             </h2>
             <p class="ingredients-text">
@@ -173,7 +167,7 @@
         <section class="recept-section" id="how-its-made">
             <h2 class="recept-title">
                 How it`s
-                <span class="recept-title-color">made?</span>
+                <span class="title-color">made?</span>
             </h2>
             <img class="recept-image" src="./images/melted-chocolate.jpg" alt="melted-chocolate" width="600"
                 height="400">
@@ -214,7 +208,7 @@
         <section class="products-section">
             <h2 class="products-title">
                 Our
-                <span class="products-title-color">products</span>
+                <span class="title-color">products</span>
             </h2>
             <ul class="products-list">
                 <li class="products-list-item">
@@ -279,7 +273,7 @@
         <!-- section-6 - top sellers -->
         <section class="sellers-section">
             <h2 class="sellers-title">
-                <span class="sellers-title-color">Top</span>
+                <span class="title-color">Top</span>
                 sellers
             </h2>
             <ul class="sellers-list">
@@ -304,7 +298,7 @@
         <!-- section-7 - review (chocolate is loved) -->
         <section class="review-section" id="chocolate-is-loved">
             <h2 class="review-title">
-                <span class="review-title-color">Chocolate</span>
+                <span class="title-color">Chocolate</span>
                 is loved
             </h2>
             <ul class="review-list">
@@ -343,52 +337,54 @@
     </main>
 
     <footer class="footer" id="footer">
-        <p class=""><span class="footer-text-color">Chocolate</span> a delicious cure for a bad day</p>
+        <p class="footer-heading"><span class="footer-heading-color">Chocolate</span> a delicious cure for a bad day</p>
         <!-- social networks -->
-        <p class="">Social networks</p>
-        <ul class="">
+        <p class="footer-subtitle">Social networks</p>
+        <ul class="footer-list-social">
             <!-- instagram -->
-            <li class="">
+            <li class="footer-social-item">
                 <a class="" href="https://www.instagram.com/">
-                    <img class="" src="./images/instagram.svg" alt="instagram logo" width="24" height="24">
+                    <img class="footer-item-image" src="./images/instagram.svg" alt="instagram logo" width="24"
+                        height="24">
                 </a>
             </li>
             <!-- facebook -->
-            <li class="">
-                <a class="" href="https://www.facebook.com/">
+            <li class="footer-social-item">
+                <a class="footer-item-image" href="https://www.facebook.com/">
                     <img class="" src="./images/facebook.svg" alt="facebook logo" width="24" height="24">
                 </a>
             </li>
             <!-- twitter -->
-            <li class="">
-                <a class="" href="https://twitter.com/">
+            <li class="footer-social-item">
+                <a class="footer-item-image" href="https://twitter.com/">
                     <img class="" src="./images/twitter.svg" alt="twitter logo" width="24" height="24">
                 </a>
             </li>
         </ul>
         <!-- contacts -->
-        <p class="">Contact us</p>
-        <address class="">
-            <ul class="">
-                <li class="">
-                    <a class="" href="tel:+380684439426">+380 (68) 443-94-26</a>
+        <p class="footer-subtitle">Contact us</p>
+        <!-- address -->
+        <address class="footer-address">
+            <ul class="footer-address-list">
+                <li class="address-list-item">
+                    <a class="address-item-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
                 </li>
-                <li class="">
-                    <a class="" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                <li class="address-list-item">
+                    <a class="address-item-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
                 </li>
             </ul>
         </address>
         <!-- footer-navigation -->
-        <nav class="">
-            <ul class="">
-                <li class="">
-                    <a class="" href="./index.html">Home</a>
+        <nav class="footer-navigation">
+            <ul class="footer-navigation-list">
+                <li class="navigation-list-item">
+                    <a class="navigation-item-link" href="./index.html">Home</a>
                 </li>
-                <li class="">
-                    <a class="" href="#how-its-made">How it`s made</a>
+                <li class="navigation-list-item">
+                    <a class="navigation-item-link" href="#how-its-made">How it`s made</a>
                 </li>
-                <li class="">
-                    <a class="" href="#chocolate-is-loved">Chocolate is loved</a>
+                <li class="navigation-list-item">
+                    <a class="navigation-item-link" href="#chocolate-is-loved">Chocolate is loved</a>
                 </li>
             </ul>
         </nav>
@@ -396,11 +392,8 @@
         <!-- <ul>
             <li>
                 <button type="button">Enter your email</button>
-            </li>
-            <li>
-                <button type="button">Subscribe</button>
-            </li>
-        </ul> -->
+            </li> -->
+        <button class="footer-button" type="button">Subscribe</button>
     </footer>
 
 </body>
