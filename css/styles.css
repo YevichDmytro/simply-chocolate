@@ -212,6 +212,15 @@ p {
   overflow: hidden;
 }
 
+.benefits-list {
+  display: flex;
+  gap: 88px;
+}
+
+.benefits-list-item {
+  max-width: 308px;
+}
+
 .benefits-item-text {
   margin-top: 18px;
   color: rgba(255, 255, 255, 0.7);
@@ -232,40 +241,58 @@ p {
   padding-top: 120px;
 }
 
-.ingredients-container {
-}
-
 .ingredients-title {
-  margin-bottom: 28px;
   max-width: 412px;
+  margin: 0 auto 28px;
 }
 
 .ingredients-text {
-  margin-bottom: 50px;
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+
   max-width: 486px;
+  margin: 0 auto 50px;
 }
 
 .ingredients-list {
-}
-.ingredients-item-orange {
-}
-.ingredients-item-image {
-}
-.ingredients-item-subtitle {
-}
-.ingredients-item-white {
-}
-.ingredients-item-violet {
-}
-
-.ingredients-text {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
 
 .ingredients-list-item {
   text-transform: uppercase;
   border-radius: 15px;
-  overflow: hidden;
+  width: calc((100% - 96px) / 4);
+  flex-shrink: 0;
+  background-color: rgba(253, 146, 34, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.ingredients-list-item:nth-child(2n + 2) {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(17, 17, 17, 1);
+  border: 1px solid rgba(253, 146, 34, 1);
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+  background-color: rgba(30, 24, 35, 1);
+}
+
+.ingredients-item-image {
+  margin: 28px auto 0;
+}
+
+.ingredients-item-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  padding: 36px 0 28px 28px;
 }
 
 /* -------------------------------------------------------------------- */
@@ -275,16 +302,13 @@ p {
   color: rgba(17, 17, 17, 1);
 }
 
-.recept-container {
-}
-
 .recept-title {
   margin-bottom: 50px;
 }
 
-.title-color {
-}
-.recept-image {
+.recept-box-container {
+  display: flex;
+  gap: 20px;
 }
 
 .recept-subtitle {
@@ -298,69 +322,54 @@ p {
   border-radius: 15px;
 }
 
-.recept-list {
-}
-
 .recept-list-item:not(:last-child) {
   margin-bottom: 24px;
-}
-
-.recept-item-text {
 }
 
 .recept-image {
   border-radius: 15px;
 }
 
-.recept-list > li {
+.recept-list-item {
   list-style-type: disc;
 }
 
 /* -------------------------------------------------------------------- */
 /* ------------------------section-5 - products------------------------ */
 /* -------------------------------------------------------------------- */
-.products-section {
-}
-.container {
-}
-.products-container {
-}
 .products-title {
   margin-bottom: 50px;
 }
-.title-color {
-}
+
 .products-list {
-}
-.products-list-item {
-}
-.products-item-image {
-  margin-bottom: 8px;
-  padding: 32px 20px 0;
-}
-.products-item-subtitle {
-  margin-bottom: 2px;
-}
-.products-item-text {
-  margin-bottom: 18px;
-}
-.products-item-button {
-  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 
 .products-list-item {
+  width: calc((100% - 54px) / 4);
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  background-color: rgba(250, 250, 250, 1);
+  background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
 }
 
+.products-item-image {
+  margin: 32px auto 0;
+  margin-bottom: 8px;
+}
+
 .products-item-subtitle {
+  margin-bottom: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .products-item-text {
+  margin-bottom: 18px;
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
 }
 
 .products-item-button {
@@ -369,29 +378,20 @@ p {
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: rgba(250, 250, 250, 1);
   padding: 8px 20px;
+  display: block;
+  margin: 0 auto 32px;
 }
 
 /* --------------------------------------------------------------------- */
 /* -----------------------section-6 - top sellers----------------------- */
 /* --------------------------------------------------------------------- */
-.sellers-section {
-}
-.container {
-}
-.sellers-container {
-}
 .sellers-title {
   margin-bottom: 50px;
 }
-.title-color {
-}
+
 .sellers-list {
-}
-.sellers-list-item {
-}
-.sellers-item-image {
-}
-.sellers-item-subtitle {
+  display: flex;
+  gap: 16px;
 }
 
 .sellers-item-image {
@@ -405,43 +405,45 @@ p {
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
   border-left: 1px solid rgba(17, 17, 17, 0.1);
   background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 28px 0;
 }
 
 /* --------------------------------------------------------------------- */
 /* ---------------section-7 - review (chocolate is loved)--------------- */
 /* --------------------------------------------------------------------- */
-.review-section {
-}
 .review-title {
   margin-bottom: 50px;
 }
-.title-color {
-}
+
 .review-list {
-}
-.review-list-item {
-}
-.review-item-image {
-}
-.review-item-subtitle {
-}
-.review-item-text {
-}
-.review-button {
-  margin-top: 50px;
+  display: flex;
+  gap: 28px;
 }
 
-.review-image {
+.review-list-item {
+  width: calc((100% - 2 * 28px) / 3);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
+.review-item-image {
   border-radius: 80px;
+  margin: 0 auto 18px;
 }
 
 .review-item-subtitle {
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .review-item-text {
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
+  max-width: 321px;
+  margin: 0 auto;
 }
 
 .review-button {
@@ -449,6 +451,8 @@ p {
   border-radius: 100px;
   border: 1px solid rgba(253, 146, 34, 1);
   padding: 14px 40px;
+  margin: 50px auto 0;
+  display: block;
 }
 
 /* -------------------------------------------------------------------- */
